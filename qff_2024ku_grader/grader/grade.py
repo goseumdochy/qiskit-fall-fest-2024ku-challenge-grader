@@ -50,7 +50,7 @@ def grade_answer(
         )
 
         if True: # 점수가 있는 챌린지에서는 분기할 예정
-            handle_grade_response(answer_response["grading_valdiation"])
+            handle_grade_response(answer_response["grading_validation"])
 
     except Exception as err:
         print(f'Failed: {err}')
