@@ -29,7 +29,7 @@ class MaxContentError(BaseException):
         return self.message
 
 def get_grading_endpoint(
-    question_id: Union[str, int], challenge_id: str
+    question_id: Union[str, int]
 ) -> Optional[str]:
     # https://qac-grading-dev.quantum.ibm.com
     global _api_grade_url
@@ -49,7 +49,7 @@ def get_grading_endpoint(
               'the grading servers are down right now.')
         return None
 
-    return f'{normalize_slash(_api_grade_url)}challenges/{challenge_id}/validate/{question_id}'
+    return f'{normalize_slash(_api_grade_url)}answers/{question_id}'
 
 def send_request(
     endpoint: str,
