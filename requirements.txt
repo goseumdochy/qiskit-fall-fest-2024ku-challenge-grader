@@ -18,3 +18,10 @@ circuit-knitting-toolbox
 # jupyter
 jupyterlab
 ipykernel
+
+# Colab dependency check
+cloudpickle==3.0.0
+fsspec==2024.6.1
+ipykernel==5.5.6
+ipython==7.34.0
+jupyter-client==7.4.2
