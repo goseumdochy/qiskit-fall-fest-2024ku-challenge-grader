@@ -5,7 +5,7 @@ from qiskit import QuantumCircuit
 from qiskit.quantum_info import SparsePauliOp
 
 @typechecked
-def grade_challenge1a(answer: str) -> None:
+def grade_challenge1a(answer) -> None:
     grade(answer, "1a")
     
 @typechecked
