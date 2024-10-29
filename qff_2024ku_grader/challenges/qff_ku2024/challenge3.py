@@ -32,5 +32,5 @@ def grade_challenge3e(answer: StagedPassManager) -> None:
            ], "3e")
   
 @typechecked
-def grade_challenge3f(answer: str) -> None:
+def grade_challenge3f(answer: List(dict)) -> None:
     grade(answer, "3f")
