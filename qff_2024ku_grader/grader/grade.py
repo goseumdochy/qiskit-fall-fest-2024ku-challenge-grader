@@ -14,12 +14,13 @@ from .api import (
 def grade(
     answer: Any,
     question: Union[str, int],
+    username: str,
     **kwargs: Any
 ) -> Tuple[bool, Optional[Union[str, int, float]], Optional[Union[str, int, float]]]:
     serialized_answer = to_json(answer, **kwargs)
 
     endpoint = get_grading_endpoint(question)
-    payload = {'answer': serialized_answer}
+    payload = {'answer': serialized_answer, 'username': username}
 
     if serialized_answer is not None and endpoint:
         print('Grading your answer. Please wait...')

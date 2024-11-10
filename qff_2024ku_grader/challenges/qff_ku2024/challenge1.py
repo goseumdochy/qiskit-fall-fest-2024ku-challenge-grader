@@ -5,17 +5,17 @@ from qiskit import QuantumCircuit
 from qiskit.quantum_info import SparsePauliOp
 
 @typechecked
-def grade_challenge1a(answer) -> None:
-    grade(answer, "1a")
+def grade_challenge1a(answer, username:str) -> None:
+    grade(answer, "1a", username)
     
 @typechecked
-def grade_challenge1b(answer: QuantumCircuit) -> None:
-    grade(answer, "1b")
+def grade_challenge1b(answer: QuantumCircuit, username:str) -> None:
+    grade(answer, "1b", username)
 
 @typechecked
-def grade_challenge1c(answer: List[SparsePauliOp]) -> None:
-    grade(answer, "1c")
+def grade_challenge1c(answer: List[SparsePauliOp], username:str) -> None:
+    grade(answer, "1c", username)
 
 @typechecked
-def grade_challenge1d(answer: Tuple[QuantumCircuit, List[SparsePauliOp]]) -> None:
-    grade(answer, "1d")
+def grade_challenge1d(answer: Tuple[QuantumCircuit, List[SparsePauliOp]], username:str) -> None:
+    grade(answer, "1d", username)

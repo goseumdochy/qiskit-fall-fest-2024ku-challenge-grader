@@ -8,29 +8,29 @@ from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler import StagedPassManager
 
 @typechecked
-def grade_challenge3a(answer: dict) -> None:
-    grade(answer, "3a")
+def grade_challenge3a(answer: dict, username:str) -> None:
+    grade(answer, "3a", username)
 
 @typechecked
-def grade_challenge3b(answer: StagedPassManager) -> None:
+def grade_challenge3b(answer: StagedPassManager, username:str) -> None:
     grade([len(answer.to_flow_controller().tasks), len(answer.init.to_flow_controller().tasks), len(answer.layout.to_flow_controller().tasks), len(answer.routing.to_flow_controller().tasks)
-           ], "3b")
+           ], "3b", username)
   
 @typechecked
-def grade_challenge3c(answer: StagedPassManager) -> None:
+def grade_challenge3c(answer: StagedPassManager, username:str) -> None:
     grade([len(answer.to_flow_controller().tasks), len(answer.init.to_flow_controller().tasks), len(answer.layout.to_flow_controller().tasks), len(answer.routing.to_flow_controller().tasks)
-           ], "3c")
+           ], "3c", username)
 
 @typechecked
-def grade_challenge3d(answer: StagedPassManager) -> None:
+def grade_challenge3d(answer: StagedPassManager, username:str) -> None:
     grade([len(answer.to_flow_controller().tasks), len(answer.init.to_flow_controller().tasks), len(answer.layout.to_flow_controller().tasks), len(answer.routing.to_flow_controller().tasks)
-           ], "3d")
+           ], "3d", username)
     
 @typechecked
-def grade_challenge3e(answer: StagedPassManager) -> None:
+def grade_challenge3e(answer: StagedPassManager, username:str) -> None:
     grade([len(answer.to_flow_controller().tasks), len(answer.init.to_flow_controller().tasks), len(answer.layout.to_flow_controller().tasks), len(answer.routing.to_flow_controller().tasks)
-           ], "3e")
+           ], "3e", username)
   
 @typechecked
-def grade_challenge3f(answer: List[dict]) -> None:
-    grade(answer, "3f")
+def grade_challenge3f(answer: List[dict], username:str) -> None:
+    grade(answer, "3f", username)
