@@ -16,6 +16,7 @@ is_staging: bool = 'auth-dev' in os.getenv('QXAuthURL', 'auth')
 # possible challenge grading endpoints: https://qac-grading-dev.quantum.ibm.com
 grading_endpoints: List[str] = [
     'http://127.0.0.1:8000', # 여기에 추후 서버 ip 추가하면 될 듯
+    'http://3.36.130.111:8000'
     f'https://qac-grading{"-dev" if is_staging else ""}.quantum.ibm.com'
 ]
 
